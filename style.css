@@ -1,0 +1,156 @@
+/* KEYFRAMES */
+
+@keyframes growSpinImage {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(270deg) scale(0.1);
+    }
+
+    10% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(1);
+    }
+
+    90% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(270deg) scale(0.1);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spinImage {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotateY(270d);
+    }
+
+    10%{
+        transform: translateX(-50%) translateY(-50%) rotateY(0deg);
+    }
+
+    90% {
+        transform: translateX(-50%) translateY(-50%) rotateY(0deg);
+    }
+
+    100%{
+        transform: translateX(-50%) translateY(-50%) rotateY(270deg);
+    }
+}
+
+.growSpinImage {
+    transform: translateX(-50%) translateY(-50%) rotate(270deg) scale(0.1);
+    animation: growSpinImage 5s linear;
+    animation-fill-mode: forwards;
+}
+
+.fade {
+    opacity: 0;
+    animation: fade 5s linear;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 5s linear;
+    animation-fill-mode: forwards;
+}
+
+.spinImage {
+    transform: translateX(-50%) translateY(-50%) rotate(270deg);
+    animation: spinImage 5s linear;
+    animation-fill-mode: forwards;
+}
+
+/* GENERAL */
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Images/Many Flowers.jpeg");
+    background-color: lightpink;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CLASSES */
+
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 70%;
+}
+
+.stage {
+    position: relative;
+
+    width: 55vw;
+    height: 35vw;
+    padding: 20px;
+    
+    background-color: lightpink;
+    border-radius: 10% 45%;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    height: 50px;
+    font-size: 6vw;
+
+    /*https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap*/
+    font-family: 'Pacifico', cursive;
+}
+
+.title {
+    position: absolute;
+    top: -6vw;
+    font-size: 6vw;
+    color: #9acd32;
+    /*https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap*/
+    font-family: 'Indie flower', cursive;
+}
